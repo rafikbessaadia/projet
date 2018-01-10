@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rafik bessaadia</title>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="jss/script.js" type="text/javascript"></script>
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- START NAVBAR -->
+  <div id="wrapper1" class="container-fluid">
+    <nav class="navigation">
+      <div class="left">
+        <div class="logo">RAFIK BESSAADIA</div>
+        <div class="sublogo">Chemical engineer</div>
+      </div>
+
+      <div class="right">
+        <ul>
+          <li><a href="#aboutme">ABOUT ME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- END NAVBAR -->
+
+    <!-- START HEADER -->
+
+    <div id="header" class="container-fluid">
+      <div id="welcome">
+        <h1>WELCOME</h1>
+        <h4 style="padding-bottom: 50px">Let's create amazing things together.</h4>
+        <a href="#aboutme" class="btn btn-circle">
+          <i class="fa fa-angle-double-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END WRAPPER -->
+
+  <!-- START ABOUT ME -->
+
+  <div id="aboutme" class="container-fluid">
+    <div class="row" style="padding-top: 50px; padding-left:100px;">
+      <div class="col-md-8">
+      	<div class="textcomment">
+        <p class="testtype"><b>ABOUT ME</b></p><br>
+        <p> Detail-oriented professional prepared to excel in the field of chemical engineering and
+ contribute to organizational objectives.</p><br>
+     <ul>
+
+        <li><b>Environmental Engineering</b>: Monitor and test air emissions and evaluate air pollution
+control processes. Develop physical and chemical methods for controlling air pollution.</li>
+
+        <li><b>Process Design</b>: Analyze plant and equipment needs. Contribute to and develop most
+economic and effective practices. </li>
+         
+         <li><b>Computers & Administration</b>: Utilize Windows-based PCs with various software: MATLAB,
+Microsoft Office,Aspen, comsol, Autocad. </li>
+
+           <li><b>Key Strengths</b>: well organized ,Adept at maintaining an exceptional rate of productivity,
+accuracy, and efficiency, able to get along with work colleagues and managers. </li>
+
+      </ul>
+  </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="/projet/img/raf3.png" class="img-round"></img>
+      </div>
+    </div>
+  </div>
+
+  <!-- END ABOUT ME -->
+
+  <!-- START PORTFOLIO -->
+
+  <div id="portfolio" class="container-fluid">
+           <p class="testtype"><b>PORTFOLIO</b></p><br>
+    <div class="row">
+
+      <div class="col-md-6" style="margin-bottom: 10px">
+
+        <img src="/projet/img/raf4.jpg" class="img-responsive">
+      <p class="comment"><b> Petroleum Engineering</b></p>
+      </div>
+      <div class="col-md-6" style="margin-bottom: 10px">
+        <img src="/projet/img/raf5.jpg" class="img-responsive">
+       <p class="comment"> <b>Environmental Engineering</p></p>
+       </div>
+    </div>
+    <BR>
+    <div class="row">
+      <div class="col-md-6" style="margin-bottom: 10px">
+        <img src="/projet/img/raf6.jpg" class="img-responsive">
+              <p class="comment"> <b>Renewable Energy</b></p>
+
+      </div>
+      <div class="col-md-6" style="margin-bottom: 10px">
+        <img src="/projet/img/raf7.jpg" class="img-responsive">
+              <p class="comment"><b>Depollution Process</b></p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- END PORTFOLIO -->
+
+  <!-- START FOOTER -->
+  <div id="footer" class="container-fluid">
+    <a href="https://www.facebook.com/rafik.bensaadia" target="blank" class="icon-btn facebook-icn"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/rafikosi" target="blank" class="icon-btn twitter-icn"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/rafik-bessadia-43bb39a1/" target="blank" class="icon-btn linkedin-icn" ><i class="fa fa-linkedin"></i></a>
+    <br><br>
+
+  </div>
+
+    <!-- END FOOTER -->
+
+  <script>
+  	$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+
+
+
+
+
+  </script>
+</body>
