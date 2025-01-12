@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="wrapper1" class="container-fluid">
+        <nav class="navigation">
+            <div class="left">
+                <div class="logo">RAFIK BESSAADIA</div>
+                <div class="sublogo">Quality Engineer | Data Enthusiast</div>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="data_analysis.html">Data Projects</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div id="header" class="container-fluid">
+        <div id="welcome">
+            <h1>Data Analysis Projects</h1>
+            <p>Welcome to my data analysis showcase! Below you'll find a selection of projects I've worked on.</p>
+        </div>
+    </div>
+
+    <!-- Data Analysis Projects -->
+    <div id="projects" class="container-fluid">
+        <p class="testtype"><b>Featured Projects</b></p><br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="img/project1.jpg" class="img-responsive" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of this data analysis project, including tools used (e.g., Excel, Power BI), objectives, and key results.</p>
+                    <a href="project1_details.html" class="btn btn-info" target="_blank">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="img/project2.jpg" class="img-responsive" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Details about another project, including the type of analysis and any valuable insights gained.</p>
+                    <a href="project2_details.html" class="btn btn-info" target="_blank">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="img/project3.jpg" class="img-responsive" alt="Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>Overview of the project, methods, and how the findings were applied to improve efficiency or solve problems.</p>
+                    <a href="project3_details.html" class="btn btn-info" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="container-fluid">
+        <a href="https://www.facebook.com/rafik.bensaadia" target="blank" class="icon-btn facebook-icn"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/rafikosi" target="blank" class="icon-btn twitter-icn"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/rafik-bessadia-43bb39a1/" target="blank" class="icon-btn linkedin-icn"><i class="fa fa-linkedin"></i></a>
+        <br><br>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('a[href^="#"]').on('click',function (e) {
+                e.preventDefault();
+                var target = this.hash;
+                var $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
